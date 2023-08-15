@@ -6,9 +6,21 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: grab;
   transition: background-color 0.3s, transform 0.3s;
+  font-size: 0.9rem;
 }
 
 .dragging {
   background-color: #f0f0f0;
   transform: scale(1.05);
+}
+
+.card:hover {
+  background-color: #f4f4f4;
+  transform: scale(1.02);
+}
+
+@media (max-width: 550px) {
+  .card {
+    font-size: 0.8rem;
+  }
 }

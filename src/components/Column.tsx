@@ -41,6 +41,7 @@ const Column: React.FC<ColumnProps> = ({
   return (
     <div ref={drop} className={styles.column}>
       <h3 className={styles.columnTitle}>{title}</h3>
+      <h3 className={styles.columnSubtitle}>{cardCount} tasks</h3>
       {cards.map((cardId) => (
         <Card
           key={cardId}
@@ -50,7 +51,9 @@ const Column: React.FC<ColumnProps> = ({
         />
       ))}
       {!isOver && cardCount === 0 && (
-        <p>Drag some cards to add them to this column.</p>
+        <p className={styles.dragSomeOver}>
+          Drag some cards to add them to this column.
+        </p>
       )}
       {isOver && <div className={styles.dropIndicator}>Drop here</div>}
     </div>

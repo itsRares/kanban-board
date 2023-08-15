@@ -9,7 +9,6 @@ const App: React.FC = () => {
     <Provider store={store}>
       <Router>
         <Routes>
-          {/* Render KanbanPage component on the default route */}
           <Route path="/" element={<KanbanPage />} />
         </Routes>
       </Router>

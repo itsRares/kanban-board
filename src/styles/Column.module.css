@@ -8,8 +8,15 @@
 
 .columnTitle {
   font-size: 1.2rem;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   margin-top: 0;
+}
+
+.columnSubtitle {
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #a6a6a6;
 }
 
 .dropIndicator {
@@ -19,4 +26,21 @@
   border-radius: 8px;
   margin-top: 8px;
   font-size: 0.9rem;
+}
+
+.dragSomeOver {
+  font-size: 0.9rem;
+  margin-top: 100px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #a6a6a6;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .column {
+    font-size: 0.8rem;
+    width: 80%;
+    align-self: center;
+  }
 }

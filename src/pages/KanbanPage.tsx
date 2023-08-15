@@ -9,6 +9,7 @@ const KanbanPage: React.FC = () => {
     <div className={styles.page}>
       <div className={styles.content}>
         <DndProvider backend={HTML5Backend}>
+          <h1 className={styles.title}>Kanban Board</h1>
           <Board />
         </DndProvider>
       </div>
